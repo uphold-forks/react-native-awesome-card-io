@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => s.homepage, :tag => "v#{s.version}" }
   s.source_files     = 'ios/*.{h,m}'
   s.platform         = :ios, "8.0"
+  s.static_framework = true
   s.frameworks       = 'Accelerate', 'AVFoundation', 'AudioToolbox', 'CoreMedia', 'CoreVideo', 'MobileCoreServices', 'OpenGLES', 'QuartzCore', 'Security', 'UIKit'
   s.libraries        = 'c++'
   s.dependency 'React'
